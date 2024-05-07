@@ -5,6 +5,34 @@ class navigator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.orange[100],
+        title: Text(
+          "Sign-Up Screen",
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            color: Colors.orange[900],
+          ),
+        ),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.deepOrange[50],
+          ),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => ))
+          },
+          child: Text(
+            "Go to Home Screen",
+            style: TextStyle(
+              color: Colors.deepOrange[900],
+              fontSize: 17,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
