@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navigation/navigation.dart';
+import 'package:navigation/loginView.dart';
 
 void main(List<String> args) {
   runApp(const myApp());
@@ -11,7 +11,7 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: navigator(),
+      home: loginView(),
     );
   }
 }

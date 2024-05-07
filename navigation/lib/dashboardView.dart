@@ -1,39 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:navigation/dashboardView.dart';
+import 'package:navigation/loginView.dart';
 
-class homeView extends StatelessWidget {
-  const homeView({super.key});
+class dashboard extends StatelessWidget {
+  const dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.cyan[100],
         title: Text(
-          "Home Screen",
+          "Dashboard",
           style: TextStyle(
             fontWeight: FontWeight.w600,
-            color: Colors.blue[900],
+            color: Colors.cyan[900],
           ),
         ),
       ),
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blue[50],
+            backgroundColor: Colors.cyan[50],
           ),
           onPressed: () {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => dashboard(),
-              ),
-            );
+            Navigator.pop(context);
           },
           child: Text(
-            "Go to Dashboard Screen",
+            "Close Screen",
             style: TextStyle(
-              color: Colors.blueGrey[900],
+              color: Colors.cyan[900],
               fontSize: 17,
             ),
           ),
