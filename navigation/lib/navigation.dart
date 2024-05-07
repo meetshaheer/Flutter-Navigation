@@ -23,7 +23,7 @@ class navigator extends StatelessWidget {
             backgroundColor: Colors.deepOrange[50],
           ),
           onPressed: () {
-            Navigator.push(
+            Navigator.pushReplacement(
               context,
               MaterialPageRoute(
                 builder: (context) => homeView(),
