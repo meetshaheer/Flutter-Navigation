@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation/homeView.dart';
 
 class navigator extends StatelessWidget {
   const navigator({super.key});
@@ -22,7 +23,12 @@ class navigator extends StatelessWidget {
             backgroundColor: Colors.deepOrange[50],
           ),
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ))
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => homeView(),
+              ),
+            );
           },
           child: Text(
             "Go to Home Screen",
